@@ -1,0 +1,57 @@
+### Pseudocode: Integer Pointers Program
+
+
+START
+
+    DECLARE firstNumber AS INTEGER
+    DECLARE secondNumber AS INTEGER
+    DECLARE thirdNumber AS INTEGER
+
+    OUTPUT "Enter the first integer: "
+    INPUT firstNumber
+
+    OUTPUT "Enter the second integer: "
+    INPUT secondNumber
+
+    OUTPUT "Enter the third integer: "
+    INPUT thirdNumber
+
+    DECLARE firstPointer AS INTEGER POINTER
+    DECLARE secondPointer AS INTEGER POINTER
+    DECLARE thirdPointer AS INTEGER POINTER
+
+    SET firstPointer = ALLOCATE MEMORY FOR INTEGER
+    SET secondPointer = ALLOCATE MEMORY FOR INTEGER
+    SET thirdPointer = ALLOCATE MEMORY FOR INTEGER
+
+    SET VALUE AT firstPointer = firstNumber
+    SET VALUE AT secondPointer = secondNumber
+    SET VALUE AT thirdPointer = thirdNumber
+
+    OUTPUT "Original Integer Variables"
+    OUTPUT firstNumber
+    OUTPUT secondNumber
+    OUTPUT thirdNumber
+
+    OUTPUT "Pointer Memory Addresses"
+    OUTPUT ADDRESS STORED IN firstPointer
+    OUTPUT ADDRESS STORED IN secondPointer
+    OUTPUT ADDRESS STORED IN thirdPointer
+
+    OUTPUT "Values Accessed Through Pointers"
+    OUTPUT VALUE AT firstPointer
+    OUTPUT VALUE AT secondPointer
+    OUTPUT VALUE AT thirdPointer
+
+    DEALLOCATE MEMORY AT firstPointer
+    DEALLOCATE MEMORY AT secondPointer
+    DEALLOCATE MEMORY AT thirdPointer
+
+    SET firstPointer = NULL
+    SET secondPointer = NULL
+    SET thirdPointer = NULL
+
+    OUTPUT "Memory successfully released."
+
+END
+```
